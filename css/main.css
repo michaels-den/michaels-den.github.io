@@ -47,15 +47,21 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-/* Column Settings */
+/* Layout Settings */
+.row {
+    display: flex;
+}                 
+
 .column {
   float: left;
+  padding: 10px;
+  height: 1000px;
 }
 
 .left {
-  width: 25%;
+  width: 20%;
 }
 
 .right {
-  width: 75%;
+  width: 80%;
 }
