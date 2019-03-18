@@ -47,3 +47,15 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+/* Column Settings */
+.column {
+  float: left;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
