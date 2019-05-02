@@ -45,6 +45,7 @@ ul.posts {
 }
 
 ul.posts li {
+    font-size: 1.5em;
     list-style: none;
 }
 /* Layout Settings */
