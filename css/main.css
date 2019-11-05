@@ -2,6 +2,10 @@ body {
     margin: 60px auto;
     width: 70%;
 }
+tab { margin-left: 40px;
+}
+
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
