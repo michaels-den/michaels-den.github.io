@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
 </head>
 <body>
-    <header>
-        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="is-active"{% endif %}>Home</a>
+                <a href="{{ '/posts/' | relative_url }}"{% if page.url == '/posts/' %} class="is-active"{% endif %}>Posts</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="content-wrap">
         {{ content }}
     </main>
 
-    <footer>
-        <p>&copy; 2026 {{ site.title }}</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Michael Simonson</p>
     </footer>
 </body>
 </html>
