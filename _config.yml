@@ -1,0 +1,5 @@
+title: Michael basic blog
+description: Testing the github version of SPA
+theme: minima
+plugins:
+  - jekyll-feed
